@@ -5,6 +5,6 @@ package org.example;
 public class TiendaRopa {
     static void main() {
 
-        System.out.println("Prueba del repo");
+        ;
     }
 }

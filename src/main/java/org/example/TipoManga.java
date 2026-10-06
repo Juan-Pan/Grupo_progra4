@@ -1,4 +1,6 @@
 package org.example;
 
-public enum tipoManga {
+public enum TipoManga {
+    Larga,
+    Corta
 }

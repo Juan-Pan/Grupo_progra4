@@ -2,11 +2,11 @@ package org.example;
 
 public class Prenda {
     private double precio;
-    private String talla;
+    private Talla  talla;
     private String material;
 
     // constructor
-    public Prenda(double precio, String talla, String material) {
+    public Prenda(double precio, Talla talla, String material) {
         this.precio = precio;
         this.talla = talla;
         this.material = material;
@@ -21,11 +21,11 @@ public class Prenda {
         this.precio = precio;
     }
 
-    public String getTalla() {
+    public Talla getTalla() {
         return talla;
     }
 
-    public void setTalla(String talla) {
+    public void setTalla(Talla talla) {
         this.talla = talla;
     }
 
@@ -38,13 +38,9 @@ public class Prenda {
     }
 
     // metodo caluclar_descuento
-    public double calcularDescuento(double porcentaje, double precio, boolean descuento)
+    public double calcularDescuento()
     {
-        if (descuento) {
-            return precio - (precio * porcentaje / 100);
-        } else {
-            return precio;
-        }
+        return 0;
     }
 
 }
