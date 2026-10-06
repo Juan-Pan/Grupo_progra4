@@ -1,11 +1,10 @@
 package org.example;
 
-public class Pantalon extends Prenda{
+public class Pantalon extends Prenda {
     private TipoPantalon tipoPantalon;
 
     // constructor
-    public Pantalon(double precio, Talla talla, String material, TipoPantalon tipoPantalon)
-    {
+    public Pantalon(double precio, Talla talla, Material material, TipoPantalon tipoPantalon) {
         super(precio, talla, material);
         this.tipoPantalon = tipoPantalon;
     }
@@ -22,8 +21,7 @@ public class Pantalon extends Prenda{
 
     // metodo calcular descuento
     @Override
-    public double calcularDescuento()
-    {
-        return getPrecio() * 0.15;
+    public double calcularDescuento() {
+        return 15;
     }
 }

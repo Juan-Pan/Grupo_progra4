@@ -2,11 +2,11 @@ package org.example;
 
 public class Prenda {
     private double precio;
-    private Talla  talla;
-    private String material;
+    private Talla talla;
+    private Material material;
 
     // constructor
-    public Prenda(double precio, Talla talla, String material) {
+    public Prenda(double precio, Talla talla, Material material) {
         this.precio = precio;
         this.talla = talla;
         this.material = material;
@@ -29,18 +29,20 @@ public class Prenda {
         this.talla = talla;
     }
 
-    public String getMaterial() {
+    public Material getMaterial() {
         return material;
     }
 
-    public void setMaterial(String material) {
+    public void setMaterial(Material material) {
         this.material = material;
     }
 
     // metodo caluclar_descuento
-    public double calcularDescuento()
-    {
+    public double calcularDescuento() {
         return 0;
+    }
+    public double precioFinal(){
+        return getPrecio() - getPrecio() * (calcularDescuento() / 100);
     }
 
 }

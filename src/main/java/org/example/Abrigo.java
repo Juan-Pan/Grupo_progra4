@@ -4,7 +4,7 @@ public class Abrigo extends Prenda {
     private TipoAbrigo tipoAbrigo;
 
     // Constructor
-    public Abrigo(double precio, Talla talla, String material, TipoAbrigo tipoAbrigo) {
+    public Abrigo(double precio, Talla talla, Material material, TipoAbrigo tipoAbrigo) {
         super(precio, talla, material);
         this.tipoAbrigo = tipoAbrigo;
     }
@@ -20,8 +20,7 @@ public class Abrigo extends Prenda {
 
     // metodo calcular descuento
     @Override
-    public double calcularDescuento()
-    {
-        return getPrecio() * 0.2;
+    public double calcularDescuento() {
+        return 20;
     }
 }

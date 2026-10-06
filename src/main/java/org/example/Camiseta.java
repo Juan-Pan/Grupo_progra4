@@ -4,7 +4,7 @@ public class Camiseta extends Prenda {
     private TipoManga tipoManga;
 
     // constructor
-    public Camiseta(double precio, Talla talla, String material, TipoManga tipoManga) {
+    public Camiseta(double precio, Talla talla, Material material, TipoManga tipoManga) {
         super(precio, talla, material);
         this.tipoManga = tipoManga;
     }
@@ -20,6 +20,6 @@ public class Camiseta extends Prenda {
     // metodo calcular_descuento
     @Override
     public double calcularDescuento() {
-        return getPrecio() * 0.1;
+        return 10;
     }
 }
